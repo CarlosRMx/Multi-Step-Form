@@ -1,0 +1,36 @@
+// colors
+$marineBlue: hsl(213, 96%, 18%);
+$purplishBlue: hsl(243, 100%, 62%);
+$pastelBlue: hsl(228, 100%, 84%);
+$lightBlue: hsl(206, 94%, 87%);
+$strawberryRed: hsl(354, 84%, 57%);
+
+$textCoolGray: hsl(231, 11%, 63%);
+$textLightGray: hsl(229, 24%, 87%);
+$textMagnolia: hsl(217, 100%, 97%);
+$textAlabaster: hsl(231, 100%, 99%);
+$textWhite: hsl(0, 0%, 100%);
+
+
+//font 
+$font-stack: 'Ubuntu', sans-serif;
+$textsm:1.2rem;
+$textmd:1.6rem;
+$textlg:1.8rem;
+$textxl:2.4rem;    
+$textxxl:2.6rem;
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+    font-size: 62.5%;
+    background-color: $lightBlue;
+}
+header{
+    width: 100%;
+    height: 12rem;
+    max-width: 49rem;
+    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+    border: none;
+}
