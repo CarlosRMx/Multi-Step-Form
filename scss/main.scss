@@ -28,9 +28,68 @@ body{
     background-color: $lightBlue;
 }
 header{
-    width: 100%;
-    height: 12rem;
-    max-width: 49rem;
-    background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
-    border: none;
+    position: relative;
+    width: 520px;
+}
+.steps{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    position: absolute;
+    top: 1.8rem;
+    left: calc(2rem + 2rem);
+    // left: 4rem;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.8rem;
+        height: 2.8rem;
+        border: solid 1px $textWhite;
+        border-radius: 100%;
+        p{
+            font-size: $textsm;
+            color: $textWhite;
+            font-weight: bold;
+        }
+    }
+}
+.formContainer{
+    padding: 1rem;
+    form{
+        max-width: 42rem;
+        padding: 1.6rem;
+        background-color: $textWhite;
+        border-radius: 1.2rem;
+        .formInfo1{
+            h2{
+                color: $marineBlue;
+                font-weight: bold;
+                font-size: $textmd;
+            }
+            p{
+                font-size: $textsm;
+                color: $textCoolGray;
+            }
+        }
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-block-end: 1rem;
+        span{
+            font-size: 1rem;
+        }
+        input{
+            padding: 0.5rem;
+            height: 2rem;
+            border-radius: 0.3rem;
+            border: solid 0.1rem $textLightGray;
+            color: $textCoolGray;
+            font-weight: bold;
+            font-size: $textsm;
+            outline: none;
+        }
+    }
 }

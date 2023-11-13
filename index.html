@@ -11,8 +11,44 @@
 </head>
 <body>
   <header>
+    <img src="./assets/images/bg-sidebar-mobile.svg" width="520" alt="">
   </header>
-  <main></main>
+  <section class="steps">
+    <div>
+      <p class="stepsContainer__number">1</p>
+    </div>
+    <div>
+      <p class="stepsContainer__number">2</p>
+    </div>
+    <div>
+      <p class="stepsContainer__number">3</p>
+    </div>
+    <div>
+      <p class="stepsContainer__number">4</p>
+    </div>
+  </section>
+  <main>
+    <section class="formContainer">
+      <form action="">
+          <div class="formInfo1">
+            <h2>Personal Info</h2>
+            <p>Please provide your name, email address and phone number.</p>
+          </div>
+        <label for="name">
+          <span>Name</span>
+          <input type="text" name="name" id="name" autocomplete="name" required placeholder="e.g. Carlos Romero" />
+        </label>
+        <label for="email">
+          <span>Email Address</span>
+          <input type="text" name="email" id="email" autocomplete="email" required placeholder="e.g. romero@lexcopr.com" />
+        </label>
+        <label for="number">
+          <span>Phone Number</span>
+          <input type="text" name="number" id="number" autocomplete="cc-number" required placeholder="e.g. +1 123 456 100 " />
+        </label>
+      </form>
+    </section>
+  </main>
   <footer></footer>
 </body>
 </html>
