@@ -38,7 +38,6 @@ header{
     position: absolute;
     top: 1.8rem;
     left: calc(2rem + 2rem);
-    // left: 4rem;
     div{
         display: flex;
         align-items: center;
@@ -55,9 +54,14 @@ header{
     }
 }
 .formContainer{
+    position: absolute;
+    top: 5.2rem;
+    left: 0;
+    right: 0;
     padding: 1rem;
     form{
-        max-width: 42rem;
+        min-width:2.8rem;
+        max-width: 52rem;
         padding: 1.6rem;
         background-color: $textWhite;
         border-radius: 1.2rem;
@@ -91,5 +95,28 @@ header{
             font-size: $textsm;
             outline: none;
         }
+    }
+   
+}
+.controls{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height:2.8rem;
+    padding: 1.6rem;
+    background-color: $textWhite;
+    button{
+        margin-inline-end: 2.6rem;
+        padding: 0.7rem 1rem;
+        background-color: $marineBlue;
+        color: $textWhite;
+        font-size: $textsm;
+        border-radius: 0.5rem;
+        font-weight: bold;
     }
 }
