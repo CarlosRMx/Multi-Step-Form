@@ -44,29 +44,26 @@ header {
 .formContainer form {
   min-width: 2.8rem;
   max-width: 52rem;
+  height: 28rem;
+  max-height: 32rem;
   padding: 1.6rem;
+  margin-bottom: 8rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1.2rem;
 }
-.formContainer form .formInfo1 h2 {
-  color: hsl(213, 96%, 18%);
-  font-weight: bold;
-  font-size: 1.6rem;
+.formContainer form .formContainer__stepOne {
+  display: none;
 }
-.formContainer form .formInfo1 p {
-  font-size: 1.2rem;
-  color: hsl(231, 11%, 63%);
-}
-.formContainer label {
+.formContainer form label {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-block-end: 1rem;
 }
-.formContainer label span {
+.formContainer form label span {
   font-size: 1rem;
 }
-.formContainer label input {
+.formContainer form label input {
   padding: 0.5rem;
   height: 2rem;
   border-radius: 0.3rem;
@@ -76,12 +73,26 @@ header {
   font-size: 1.2rem;
   outline: none;
 }
+.formContainer form .formContainer__stepTwo .formContainer__stepTwo__plan {
+  display: flex;
+}
+.formContainer form .formContainer__stepTwo .formContainer__stepTwo__plan .formContainer__stepTwo__plan--info {
+  display: flex;
+  flex-direction: column;
+}
+.formContainer .formInfo1 h2 {
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.formContainer .formInfo1 p {
+  font-size: 1.2rem;
+  color: hsl(231, 11%, 63%);
+}
 
 .controls {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: end;
   align-items: center;

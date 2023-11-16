@@ -30,22 +30,48 @@
   <main>
     <section class="formContainer">
       <form action="">
+        <section class="formContainer__stepOne">
           <div class="formInfo1">
             <h2>Personal Info</h2>
             <p>Please provide your name, email address and phone number.</p>
           </div>
-        <label for="name">
-          <span>Name</span>
-          <input type="text" name="name" id="name" autocomplete="name" required placeholder="e.g. Carlos Romero" />
-        </label>
-        <label for="email">
-          <span>Email Address</span>
-          <input type="text" name="email" id="email" autocomplete="email" required placeholder="e.g. romero@lexcopr.com" />
-        </label>
-        <label for="number">
-          <span>Phone Number</span>
-          <input type="text" name="number" id="number" autocomplete="cc-number" required placeholder="e.g. +1 123 456 100 " />
-        </label>
+          <label for="name">
+            <span>Name</span>
+            <input type="text" name="name" id="name" autocomplete="name" required placeholder="e.g. Carlos Romero" />
+          </label>
+          <label for="email">
+            <span>Email Address</span>
+            <input type="text" name="email" id="email" autocomplete="email" required placeholder="e.g. romero@lexcopr.com" />
+          </label>
+          <label for="number">
+            <span>Phone Number</span>
+            <input type="text" name="number" id="number" autocomplete="cc-number" required placeholder="e.g. +1 123 456 100 " />
+          </label>
+        </section>
+
+        <section class="formContainer__stepTwo">
+          <div class="formInfo1">
+            <h2>Select your plan </h2>
+            <p>You have the option of monthly or yearly billing</p>
+            <div>
+              <div class="formContainer__stepTwo__plan">
+                <img src="./assets/images/icon-arcade.svg" alt="">
+                <input type="radio" id="arcade" name="type__of__plan" value="Arcade">
+                <div class="formContainer__stepTwo__plan--info">
+                  <label for="arcade">Arcade</label>
+                  <span>$90/yr</span>
+                  <span>2 months free</span> 
+                </div>
+              </div>
+             
+              <input type="radio" id="advanced" name="type__of__plan" value="Advanced">
+              <label for="advanced">Advanced</label>
+
+              <input type="radio" id="pro" name="type__of__plan" value="Pro">
+              <label for="pro">Pro</label>
+            </div>
+          </div>
+        </section>
 
       </form>
     </section>

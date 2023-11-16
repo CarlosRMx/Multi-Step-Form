@@ -62,47 +62,61 @@ header{
     form{
         min-width:2.8rem;
         max-width: 52rem;
+        height: 28rem;
+        max-height: 32rem;
         padding: 1.6rem;
+        margin-bottom: 8rem;
         background-color: $textWhite;
         border-radius: 1.2rem;
-        .formInfo1{
-            h2{
-                color: $marineBlue;
-                font-weight: bold;
-                font-size: $textmd;
+        .formContainer__stepOne{
+            display: none;
+        }
+        label{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-block-end: 1rem;
+            span{
+                font-size: 1rem;
             }
-            p{
-                font-size: $textsm;
+            input{
+                padding: 0.5rem;
+                height: 2rem;
+                border-radius: 0.3rem;
+                border: solid 0.1rem $textLightGray;
                 color: $textCoolGray;
+                font-weight: bold;
+                font-size: $textsm;
+                outline: none;
+            }
+        }
+        .formContainer__stepTwo{
+            .formContainer__stepTwo__plan{
+                display: flex;
+                .formContainer__stepTwo__plan--info{
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
     }
-    label{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-block-end: 1rem;
-        span{
-            font-size: 1rem;
-        }
-        input{
-            padding: 0.5rem;
-            height: 2rem;
-            border-radius: 0.3rem;
-            border: solid 0.1rem $textLightGray;
-            color: $textCoolGray;
+
+    .formInfo1{
+        h2{
+            color: $marineBlue;
             font-weight: bold;
+            font-size: $textmd;
+        }
+        p{
             font-size: $textsm;
-            outline: none;
+            color: $textCoolGray;
         }
     }
    
 }
 .controls{
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: end;
     align-items: center;
