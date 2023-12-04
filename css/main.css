@@ -11,6 +11,10 @@ header {
   width: 520px;
 }
 
+input[type=radio] {
+  opacity: 0;
+}
+
 .steps {
   display: flex;
   justify-content: center;
@@ -44,8 +48,9 @@ header {
 .formContainer form {
   min-width: 2.8rem;
   max-width: 52rem;
-  height: 28rem;
-  max-height: 32rem;
+  height: 38rem;
+  min-height: 28rem;
+  max-height: 58rem;
   padding: 1.6rem;
   margin-bottom: 8rem;
   background-color: hsl(0, 0%, 100%);
@@ -75,10 +80,32 @@ header {
 }
 .formContainer form .formContainer__stepTwo .formContainer__stepTwo__plan {
   display: flex;
+  margin-block-end: 1.2rem;
+  padding: 1rem;
+  border: solid 0.1rem hsl(229, 24%, 87%);
+  border-radius: 0.6rem;
+  cursor: pointer;
 }
 .formContainer form .formContainer__stepTwo .formContainer__stepTwo__plan .formContainer__stepTwo__plan--info {
   display: flex;
   flex-direction: column;
+}
+.formContainer form .formContainer__stepTwo .formContainer__stepTwo__plan .formContainer__stepTwo__plan--info label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 0;
+}
+.formContainer form .formContainer__stepTwo .formContainer__stepTwo__plan .formContainer__stepTwo__plan--info span {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: hsl(229, 24%, 87%);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.formContainer form .formContainer__stepTwo .formContainer__stepTwo__plan .formContainer__stepTwo__plan--info p {
+  margin: 0;
+  color: hsl(213, 96%, 18%);
 }
 .formContainer .formInfo1 h2 {
   color: hsl(213, 96%, 18%);
