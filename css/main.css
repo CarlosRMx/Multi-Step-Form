@@ -48,7 +48,7 @@ input[type=radio] {
 .formContainer form {
   min-width: 2.8rem;
   max-width: 52rem;
-  height: 38rem;
+  height: 44rem;
   min-height: 28rem;
   max-height: 58rem;
   padding: 1.6rem;
@@ -171,14 +171,34 @@ input[type=radio] {
 }
 .formContainer form .formContainer_stepThree__options {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   gap: 1rem;
+  width: 90%;
+  min-width: 12.8rem;
+  max-width: 40rem;
+  min-height: 2.6rem;
+  margin-block-end: 1.2rem;
+  padding: 1rem;
+  border: solid 0.1rem hsl(229, 24%, 87%);
+  border-radius: 0.6rem;
 }
 .formContainer form .formContainer_stepThree__options .formContainer_stepThree__desc label {
   margin: 0;
+  font-size: 1.2rem;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
 }
 .formContainer form .formContainer_stepThree__options .formContainer_stepThree__desc p {
-  margin-block-start: 0.1rem;
+  margin-block-start: 0.3rem;
+  color: hsl(231, 11%, 63%);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.formContainer form .formContainer_stepThree__options span {
+  color: hsl(243, 100%, 62%);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 .formContainer .formInfo1 h2 {
   color: hsl(213, 96%, 18%);
