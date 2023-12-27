@@ -194,42 +194,117 @@ input[type=radio]{
             }
            
         }
-        .formContainer__stepThree{
-            .formContainer_stepThree__wrapper{
-                
+
+        .formContainer_stepThree{
+            display: none;
+            .formContainer_stepThree__options{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 1rem;
+                width: 90%;
+                min-width: 12.8rem;
+                max-width: 40rem;
+                min-height: 2.6rem;
+                margin-block-end: 1.2rem;
+                padding: 1rem;
+                border: solid 0.1rem $textLightGray;
+                border-radius: 0.6rem;
+                .formContainer_stepThree__desc{
+                    label{
+                        margin: 0;
+                        font-size: $textsm;
+                        color: $marineBlue;
+                        font-weight: bold;
+                    }
+                    p{
+                        margin-block-start: 0.3rem;
+                        color: $textCoolGray;
+                        font-size: $textsm;
+                        font-weight: 300;
+                    }
+                }
+                span{
+                    color: $purplishBlue;
+                    font-weight: bold;
+                    font-size: $textsm;
+                }
             }
         }
-        .formContainer_stepThree__options{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            gap: 1rem;
-            width: 90%;
-            min-width: 12.8rem;
-            max-width: 40rem;
-            min-height: 2.6rem;
-            margin-block-end: 1.2rem;
-            padding: 1rem;
-            border: solid 0.1rem $textLightGray;
-            border-radius: 0.6rem;
-            .formContainer_stepThree__desc{
-                label{
-                    margin: 0;
-                    font-size: $textsm;
-                    color: $marineBlue;
-                    font-weight: bold;
-                }
-                p{
-                    margin-block-start: 0.3rem;
-                    color: $textCoolGray;
-                    font-size: $textsm;
-                    font-weight: 300;
+
+        .formContainer__details{
+            display: none;
+            .details{
+                padding: 1rem;
+                font-size: $textsm;
+                background-color: $textMagnolia;
+                border-radius: 0.5rem;
+                article{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 1rem;
+                    div{
+                        margin-bottom: 1.4rem;
+                        h3{
+                            margin: 0;
+                            color: $marineBlue;
+                            font-weight: bold;
+                        }
+                        a{
+                            color: $textCoolGray;
+                        }
+                    }
+
+                    h3{
+                        color:$textCoolGray;
+                        font-weight: 300;
+                    }
+                    span{
+                        font-weight: 500;
+                    }
                 }
             }
-            span{
-                color: $purplishBlue;
-                font-weight: bold;
-                font-size: $textsm;
+            .line{
+                width: 100%;
+                border-top: solid 0.1rem $textCoolGray;
+            }
+            .total{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-block-start: 2rem;
+                p{
+                    color: $textCoolGray;
+                    font-size: $textsm;
+                }
+                span{
+                    color: $purplishBlue;
+                    font-weight: bold;
+                    font-size: $textsm;
+                }
+            }
+        }
+
+        .formContainer__confirmation{
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 10rem;
+                    margin-block-start: 4rem;
+                }
+                h2{
+                    font-size: $textmd;
+                }
+                p{
+                    font-size: $textsm;
+                    font-weight: 300;
+                    color: $textCoolGray;
+                    text-align: center;
+                }
             }
         }
         

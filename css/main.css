@@ -169,7 +169,10 @@ input[type=radio] {
 .formContainer form .formContainer__stepTwo .formContainer__stepTwo__check .switch input:checked + .slider:before {
   transform: translateX(1.5em);
 }
-.formContainer form .formContainer_stepThree__options {
+.formContainer form .formContainer_stepThree {
+  display: none;
+}
+.formContainer form .formContainer_stepThree .formContainer_stepThree__options {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -183,22 +186,93 @@ input[type=radio] {
   border: solid 0.1rem hsl(229, 24%, 87%);
   border-radius: 0.6rem;
 }
-.formContainer form .formContainer_stepThree__options .formContainer_stepThree__desc label {
+.formContainer form .formContainer_stepThree .formContainer_stepThree__options .formContainer_stepThree__desc label {
   margin: 0;
   font-size: 1.2rem;
   color: hsl(213, 96%, 18%);
   font-weight: bold;
 }
-.formContainer form .formContainer_stepThree__options .formContainer_stepThree__desc p {
+.formContainer form .formContainer_stepThree .formContainer_stepThree__options .formContainer_stepThree__desc p {
   margin-block-start: 0.3rem;
   color: hsl(231, 11%, 63%);
   font-size: 1.2rem;
   font-weight: 300;
 }
-.formContainer form .formContainer_stepThree__options span {
+.formContainer form .formContainer_stepThree .formContainer_stepThree__options span {
   color: hsl(243, 100%, 62%);
   font-weight: bold;
   font-size: 1.2rem;
+}
+.formContainer form .formContainer__details {
+  display: none;
+}
+.formContainer form .formContainer__details .details {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 0.5rem;
+}
+.formContainer form .formContainer__details .details article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.formContainer form .formContainer__details .details article div {
+  margin-bottom: 1.4rem;
+}
+.formContainer form .formContainer__details .details article div h3 {
+  margin: 0;
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+.formContainer form .formContainer__details .details article div a {
+  color: hsl(231, 11%, 63%);
+}
+.formContainer form .formContainer__details .details article h3 {
+  color: hsl(231, 11%, 63%);
+  font-weight: 300;
+}
+.formContainer form .formContainer__details .details article span {
+  font-weight: 500;
+}
+.formContainer form .formContainer__details .line {
+  width: 100%;
+  border-top: solid 0.1rem hsl(231, 11%, 63%);
+}
+.formContainer form .formContainer__details .total {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block-start: 2rem;
+}
+.formContainer form .formContainer__details .total p {
+  color: hsl(231, 11%, 63%);
+  font-size: 1.2rem;
+}
+.formContainer form .formContainer__details .total span {
+  color: hsl(243, 100%, 62%);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.formContainer form .formContainer__confirmation div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer form .formContainer__confirmation div img {
+  width: 10rem;
+  margin-block-start: 4rem;
+}
+.formContainer form .formContainer__confirmation div h2 {
+  font-size: 1.6rem;
+}
+.formContainer form .formContainer__confirmation div p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: hsl(231, 11%, 63%);
+  text-align: center;
 }
 .formContainer .formInfo1 h2 {
   color: hsl(213, 96%, 18%);
